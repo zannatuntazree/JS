@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Programming</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" href="js.png">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <h1><a href="">JavaScript Programming</a></h1>
+            <ul>
+                <li><a href="#quote-section">Quote</a></li>
+                <li><a href="#hero-converter-section">Hero Converter</a></li>
+                <li><a href="#number-box-section">Number Box</a></li>
+                <li><a href="#magic-box-section">Magic Box</a></li>
+            </ul>
+        </nav>
+    <section id="quote-section">
+        <h2>Quote</h2>
+        <div id="quote-box">
+            <p id="quote-text"></p>
+            <div id="color-buttons">
+                <button style="background-color:red;" onclick="changeColors('red')">Red</button>
+                <button style="background-color:blue;" onclick="changeColors('blue')">Blue</button>
+                <button style="background-color:green;" onclick="changeColors('green')">Green</button>
+                <button style="background-color:purple;" onclick="changeColors('purple')">Purple</button>
+            </div>
+        </div>
+    </section>
+    <section id="hero-converter-section">
+        <h2>Converter</h2>
+        <div id="weight-converter">
+            <label for="weight">Enter Weight:</label>
+            <input type="text" id="weight" placeholder="Enter weight">
+            
+            <select id="unit-selector">
+                <option value="kg-to-lb">Kilograms to Pounds</option>
+                <option value="lb-to-kg">Pounds to Kilograms</option>
+            </select>
+    
+            <button onclick="convert()">Convert</button>
+    
+            <p>Result: <span id="result"></span></p>
+        </div>
+      </section>
+
+    <section id="number-box-section">
+        <div id="series-analyzer">
+            <h2>Number Box</h2>
+            <label for="number-series">Enter a series of numbers (separated by comma):</label>
+            <input type="text" id="number-series" placeholder="e.g., 1, 2, 3, 4">
+            <button onclick="analyzeSeries()">Analyze Series</button>
+    
+            <div id="result-container">
+                <p>Max: <span id="max-result"></span></p>
+                <p>Min: <span id="min-result"></span></p>
+                <p>Sum: <span id="sum-result"></span></p>
+                <p>Average: <span id="average-result"></span></p>
+                <p>Reverse Order: <span id="reverse-result"></span></p>
+            </div>
+        </div>
+    </section>
+    <section id="magic-box-section">
+        <div id="text-editor">
+            <h2>Magic Box</h2>
+            <textarea id="text-area" placeholder="Enter text..."></textarea>
+            <div id="button-container">
+                <button onclick="clearAll()">Clear All</button>
+                <button onclick="toggleCase()">Capitalize</button>
+                <button onclick="sortLines()">Sort</button>
+                <button onclick="reverseLines()">Reverse</button>
+                <button onclick="stripBlank()">Strip Blank</button>
+                <button onclick="addNumbers()">Add Numbers</button>
+                <button onclick="shuffleLines()">Shuffle</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p> &copy; Zannatun Tazree <br><a href="https://www.bracu.ac.bd/" target="_blank">BRAC UNIVERSITY</a><br>Dhaka,Bangladesh</p>
+        
+    </footer>
+
+    <script>
+        document.write('<p id="page-info">Page location: ' + window.location.href + '<br>Last modified: ' + document.lastModified + '</p>');
+    </script>
+
+
+    </div>
+</body>
+</html>
+
