@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const randomIndex = Math.floor(Math.random() * quotes.length);
         return quotes[randomIndex];
     }
-        // Add this function to your existing script.js file
+        
     function convert() {
         const weightInput = document.getElementById('weight').value;
         const unitSelector = document.getElementById('unit-selector');
@@ -79,7 +79,6 @@ function convert() {
         convertedWeight = weight * 0.4536;
     }
 
-    // Display the result
     resultSpan.textContent = convertedWeight.toFixed(2);
 }
    
